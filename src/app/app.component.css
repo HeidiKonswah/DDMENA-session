@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    font-family: 'Muli', sans-serif;
+}
+h1 {
+    color: rgb(86, 83, 92);
+}
+div{
+    margin-top: 40px;
+}
+nav a{
+    background-color: rgb(86, 83, 92);
+    color: #fafafa;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px; 
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+nav a:hover{
+    background-color:rgb(72, 69, 78);
+}
+ul{
+    list-style: none;
+}
+li {
+    background-color:#eee;
+    color: #333;
+    padding: 10px 20px;
+    margin: 20px;
+    margin-left: -40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+li:hover{
+    background-color: #ccc;
+}
+li input{
+    margin-right: 20px;
+}
+
+.today, .week{
+    width: 30%;
+}
+.today .details{
+    color: #333;
+    background-color: lavenderblush;
+    padding: 40px;
+}
+.today .details input{
+    border: lightsalmon;
+    padding: 10px;
+}
+

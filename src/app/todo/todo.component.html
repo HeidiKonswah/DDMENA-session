@@ -1,0 +1,18 @@
+<div class="today">
+    
+    <ul >
+        <li *ngFor="let task of tasks"  [class.done]="task.isDone">
+            <input type="checkbox" (click)="onDone(task)"/>
+            <span (click)="onSelect(task)">{{task.title}}</span>
+        </li>
+    </ul>
+
+    <div class="details" *ngIf="selected">
+        <h4>{{selected.title}}</h4>
+        <p>ID: {{selected.id}}</p>
+        <p>Time: {{selected.time}}</p>
+        <p>Status: {{selected.isDone? 'done' : 'to do'}}</p>
+        <label>Title: </label>
+        <input placeholder="title" [(ngModel)]="selected.title"/>
+    </div>
+</div>
